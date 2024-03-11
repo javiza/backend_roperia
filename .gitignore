@@ -1,14 +1,12 @@
 # compiled output
+/.gitignore
 /dist
 /node_modules
 /postgres_data
-/src/admin
 /src/count-click
-/src/entities
 /src/favorite
 /src/notification
 /src/trash
-/src/user
 /src/video
 /src/view
 

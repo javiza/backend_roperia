@@ -1,7 +1,9 @@
 export class AdminDto {
   name: string;
-  email: string;
-  phone: string;
+  rut: string;
+  mail: string;
+  cargo: string;
+  unity: string;
   password: string;
   photo: string;
   }

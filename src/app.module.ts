@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AdminModule } from './admin/admin.module';
-import { CountClickModule } from './count-click/count-click.module';
+
 import { FavoriteModule } from './favorite/favorite.module';
 import { NotificationModule } from './notification/notification.module';
 import { UserModule } from './user/user.module';
@@ -26,7 +26,6 @@ import { ConfigModule } from '@nestjs/config';
     }),
     AdminModule,
     VideoModule,
-    CountClickModule,
     ViewModule,
     UserModule,
     NotificationModule,

@@ -1,8 +1,10 @@
 export class UserDto {
-  
+    user_id: number;
     name: string;
-    email: string;
+    rut: string;
+    mail: string;
     phone: string;
+    unity: string;
     password: string;
     photo: string;
 }
