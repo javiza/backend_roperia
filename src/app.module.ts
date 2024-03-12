@@ -1,16 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AdminModule } from './admin/admin.module';
-
-import { FavoriteModule } from './favorite/favorite.module';
-import { NotificationModule } from './notification/notification.module';
 import { UserModule } from './user/user.module';
-import { VideoModule } from './video/video.module';
-import { ViewModule } from './view/view.module';
+import { GreenModule } from './green/green.module';
 import { TrashModule } from './trash/trash.module';
 import { ConfigModule } from '@nestjs/config';
-
-
 
 @Module({
   imports: [
@@ -25,11 +19,8 @@ import { ConfigModule } from '@nestjs/config';
       autoLoadEntities: true,
     }),
     AdminModule,
-    VideoModule,
-    ViewModule,
+    GreenModule,
     UserModule,
-    NotificationModule,
-    FavoriteModule,
     TrashModule
   ],
   controllers: [],

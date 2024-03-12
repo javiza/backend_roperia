@@ -1,7 +1,7 @@
 import { Entity,PrimaryGeneratedColumn, JoinColumn, OneToOne, ManyToOne, OneToMany } from 'typeorm';
-import { White } from './white.entity';
-import { Green } from './green.entity';
-import { User } from './user.entity';
+import { White } from 'src/white/white.entity';
+import { Green } from 'src/green/green.entity';
+import { User } from 'src/user/user.entity';
 
 
 @Entity()

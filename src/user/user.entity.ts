@@ -6,8 +6,8 @@ import {
     OneToMany,
   } from 'typeorm';
 
-import { Green } from "./green.entity";
-import { White } from './white.entity';
+import { Green } from 'src/green/green.entity';
+import { White } from 'src/white/white.entity';
 
   
   @Entity()

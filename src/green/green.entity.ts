@@ -1,6 +1,6 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Trash } from "./trash.entity";
-import { User } from "./user.entity";
+import { Trash } from 'src/trash/trash.entity';
+import { User } from 'src/user/user.entity';
 
 
 @Entity()

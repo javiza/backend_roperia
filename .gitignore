@@ -3,12 +3,9 @@
 /dist
 /node_modules
 /postgres_data
-/src/count-click
-/src/favorite
-/src/notification
-/src/trash
-/src/video
-/src/view
+/src/lavander
+/src/unity
+/src/proceso
 
 # Logs
 logs
