@@ -1,7 +1,7 @@
 import { BaseController } from "src/commons/controller.commons";
 import { TrashService } from "../service/trash.service";
 import { BaseService } from "src/commons/service.commons";
-import { Trash } from "src/trash/trash.entity";
+import { Trash } from "src/entities/trash.entity";
 import { Controller } from "@nestjs/common";
 
   

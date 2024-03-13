@@ -1,4 +1,4 @@
-import { Body, Get, HttpCode, HttpStatus, Param, Post } from "@nestjs/common";
+import { Body, Get, HttpCode, HttpStatus, Param, Post, UseGuards } from "@nestjs/common";
 import { BaseService } from "./service.commons";
 
 export abstract class BaseController<T> {

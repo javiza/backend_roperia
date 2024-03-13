@@ -1,5 +1,5 @@
 import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
-import { Trash } from 'src/trash/trash.entity';
+import { Trash } from 'src/entities/trash.entity';
 import { User } from 'src/user/user.entity';
 
 
