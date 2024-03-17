@@ -7,8 +7,8 @@ import { PassportModule } from "@nestjs/passport";
 import { JwtModule } from "@nestjs/jwt";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { JwtStrategy } from "./strategies/jwt.strategy";
-import { UserStats } from "../entities/userStadist.entity";
-import { Favorite } from "../entities/favorites.entity";
+import { Green } from 'src/entities/green.entity';
+import { White } from "src/entities/white.entity";
 
 @Module({
   controllers: [AuthController],
@@ -16,7 +16,7 @@ import { Favorite } from "../entities/favorites.entity";
   imports: [
     ConfigModule,
 
-    TypeOrmModule.forFeature([User, UserStats, UserStats, Favorite]),
+    TypeOrmModule.forFeature([User, Green, Green, White]),//aca puede haber error 
 
     PassportModule.register({ defaultStrategy: "jwt" }),
 

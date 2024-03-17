@@ -11,11 +11,14 @@ export class LoginUserDto {
   name: string;
 
   @IsString()
-  @IsEmail()
-  email: string;
+  photo: string;
 
   @IsString()
-  phone: string;
+  rut: string;
+
+  @IsString()
+  @IsEmail()
+  email: string;
 
   @IsString()
   @MinLength(6)
@@ -26,6 +29,4 @@ export class LoginUserDto {
   })
   password: string;
 
-  @IsString()
-  photo: string;
 }

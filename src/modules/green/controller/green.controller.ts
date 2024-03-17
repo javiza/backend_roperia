@@ -1,5 +1,5 @@
 import { Controller } from '@nestjs/common';
-import { GreenService } from 'src/modules/green/service/green.service';
+import { GreenService } from '../service/green.service';
 import { BaseController } from 'src/commons/controller.commons';
 import { Green } from 'src/entities/green.entity';
 import { BaseService } from 'src/commons/service.commons';

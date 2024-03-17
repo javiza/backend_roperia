@@ -1,11 +1,14 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AdminModule } from './admin/admin.module';
-import { UserModule } from './user/user.module';
+//import { AdminModule } from './admin/admin.module';
 import { GreenModule } from './modules/green/green.module';
 import { TrashModule } from './modules/trash/trash.module';
 import { ConfigModule } from '@nestjs/config';
 import { WhiteModule } from './modules/white/white.module';
+import { AuthModule } from './auth/auth.module';
+import { ProcesoModule } from './modules/proceso/proceso.module';
+import { UnityModule } from './modules/unity/unity.module';
+import { LavanderModule } from './modules/lavander/lavander.module';
 
 @Module({
   imports: [
@@ -19,9 +22,13 @@ import { WhiteModule } from './modules/white/white.module';
       password: process.env.DB_PASSWORD,      
       autoLoadEntities: true,
     }),
-    AdminModule,
+    AuthModule,
+    //AdminModule,
     GreenModule,
-    UserModule,
+ //   UserModule,
+    LavanderModule,
+    UnityModule,
+    ProcesoModule,
     TrashModule,
     WhiteModule
   ],

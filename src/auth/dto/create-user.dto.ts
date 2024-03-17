@@ -7,11 +7,14 @@ export class CreateUserDto {
     name: string;
 
     @IsString()
-    @IsEmail()
-    email: string;
+    photo: string;
 
     @IsString()
-    phone: string;
+    rut: string;
+
+    @IsString()
+    @IsEmail()
+    email: string;
 
     @IsString()
     @MinLength(6)
@@ -22,7 +25,5 @@ export class CreateUserDto {
     })
     password: string;
 
-    @IsString()
-    photo: string;
 
 }
