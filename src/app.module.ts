@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { ProcesoModule } from './modules/proceso/proceso.module';
 import { UnityModule } from './modules/unity/unity.module';
 import { LavanderModule } from './modules/lavander/lavander.module';
+import { ProvidersModule } from './providers/providers.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { LavanderModule } from './modules/lavander/lavander.module';
     AuthModule,
     //AdminModule,
     GreenModule,
+    ProvidersModule,
  //   UserModule,
     LavanderModule,
     UnityModule,
