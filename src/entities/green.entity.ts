@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Trash } from 'src/entities/trash.entity';
 import { User } from 'src/auth/entities/user.entity';
 
@@ -21,7 +21,7 @@ export class Green {
   @Column({ type: 'timestamptz', nullable: true })
   date_in: Date;
   
-  @OneToMany(() => User, user => user.id)
+  @ManyToOne(() => User, user => user.id)
   user: User;
 
   @OneToOne(() => Trash)

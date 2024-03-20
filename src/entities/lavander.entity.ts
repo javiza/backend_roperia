@@ -6,6 +6,7 @@ import {
     ManyToOne
   } from 'typeorm';
   import { Proceso } from './proceso.entity';
+import { User } from 'src/auth/entities/user.entity';
   
   
   @Entity()
@@ -26,8 +27,11 @@ import {
     date_in: Date;
   
   
-    @ManyToOne(() => Proceso, (proceso) => proceso.lavander)
+    @OneToMany(() => Proceso, (proceso) => proceso.lavander)
     proceso: Proceso[];
+
+    @OneToMany(() => User, (user) => user.unity)
+    user: User[];
   
     
   

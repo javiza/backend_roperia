@@ -9,6 +9,10 @@ import {
 
 import { White } from "src/entities/white.entity";
 import {Green } from "src/entities/green.entity";
+import { Proceso } from "src/entities/proceso.entity";
+import { Lavander } from "src/entities/lavander.entity";
+import { Trash } from "src/entities/trash.entity";
+import { Unity } from "src/entities/unity.entity";
 //////import { Message } from "../../entities/message.entity";
 
 @Entity("users")
@@ -41,6 +45,19 @@ export class User {
 
   @OneToMany(() => Green, (green) => green.user)
   green: Green[];
+
+
+  @OneToMany(() => Proceso, (proceso) => proceso.user)
+  proceso: Proceso[];
+
+  @OneToMany(() => Lavander, (lavander) => lavander.user)
+  lavander: Lavander[];
+
+  @OneToMany(() => Trash, (trash) => trash.user)
+  trash: Trash[];
+  
+  @OneToMany(() => Unity, (unity) => unity.user)
+  unity: Unity[];
 
   @BeforeInsert()
   checkFieldsBeforeInsert() {

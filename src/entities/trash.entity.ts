@@ -10,7 +10,7 @@ export class Trash {
   @PrimaryGeneratedColumn()
   id: number
   
-  @OneToMany(() => User, user => user.user_id)
+  @ManyToOne(() => User, user => user.id)
   user: User;
 
   @OneToOne(() => Green)
