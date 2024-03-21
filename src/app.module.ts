@@ -10,10 +10,14 @@ import { ProcesoModule } from './modules/proceso/proceso.module';
 import { UnityModule } from './modules/unity/unity.module';
 import { LavanderModule } from './modules/lavander/lavander.module';
 import { ProvidersModule } from './providers/providers.module';
+import typeorm from './config/typeorm';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
+    ConfigModule.forRoot({
+      isGlobal: true,
+      load: [typeorm]
+    }),
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DB_HOST,
